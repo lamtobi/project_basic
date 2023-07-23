@@ -31,12 +31,12 @@
             android:id="@+id/btnnhap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Đâng nhập" />
 
         <Button
             android:id="@+id/btnky"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Đăng ký" />
     </LinearLayout>
 </LinearLayout>

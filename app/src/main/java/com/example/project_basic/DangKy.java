@@ -2,6 +2,7 @@ package com.example.project_basic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -31,7 +32,19 @@ Button dn,dk;
                 addTaiKhoan();
             }
         });
+        dn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nextDangNhapActivity();
+            }
+        });
     }
+
+    private void nextDangNhapActivity() {
+        Intent intent=new Intent(DangKy.this, DangNhap.class);
+        startActivity(intent);
+    }
+
     private void addTaiKhoan(){
         String tk=edtendky.getText().toString().trim();
         String mk=edmkdky.getText().toString().trim();

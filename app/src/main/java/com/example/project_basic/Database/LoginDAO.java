@@ -16,4 +16,6 @@ public interface LoginDAO {
 
     @Query("select *from taikhoan")
     List<Login>getlistlogin();
+    @Query("select *from taikhoan where tendangnhap=:tk and matkhau=:mk")
+    List<Login>checklogin(String tk,String mk);
 }
